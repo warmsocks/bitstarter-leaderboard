@@ -179,40 +179,242 @@
       <!-- For the FAQ, we introduce a little bit of JS, using the accordion. -->
       <!-- This brings in jquery.js and bootstrap.js as dependencies. -->
       <!-- http://twitter.github.io/bootstrap/javascript.html#collapse -->
-      <div class="row-fluid faq">
-          <div class="span10 offset1">
-            <h3>FAQ</h3>
-            <div class="accordion" id="accordion2">
-              <div class="accordion-group">
-                <div class="accordion-heading">
-                  <a class="accordion-toggle" data-toggle="collapse"
-                     data-parent="#accordion2" href="#collapseOne">
-                    What does FAQ stand for?
-                  </a>
-                </div>
-                <div id="collapseOne" class="accordion-body collapse">
-                  <div class="accordion-inner">
-                    Frequently Asked Question.
-                  </div>
-                </div>
-              </div>
-              <div class="accordion-group">
-                <div class="accordion-heading">
-                  <a class="accordion-toggle" data-toggle="collapse"
-                     data-parent="#accordion2" href="#collapseTwo">
-                    What's a Frequently Asked Question?
-                  </a>
-                </div>
-                <div id="collapseTwo" class="accordion-body collapse">
-                  <div class="accordion-inner">
-                    A question which is commonly asked by users.
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+
+
+    <div class="row-fluid faq">
+      <div class="span10 offset1">
+	<h3>FAQ</h3>
+	  <div class="accordion" id="accordion2">
+
+	    <div class="accordion-group">
+	      <div class="accordion-heading">
+		<a class="accordion-toggle" data-toggle="collapse"
+		     data-parent="#accordion2" href="#collapseOne">
+		  How is my data shared?
+		</a>
+	      </div>
+	      <div id="collapseOne" class="accordion-body collapse">
+		<div class="accordion-inner">
+		  Your shared genetic data is stored securely on our servers.  You can share it
+		  with whomever you wish using our website, or by tapping your mobile device
+		  with that of another user if both of you have NFC-capable devices. 
+		  You can keep your genetic data private, share it publically or 
+		  share it only with those whom you choose for a specified time.  If you
+		  choose to share your data for a limited time, when the time is up the
+		  user you shared it with temporarily can no longer see your data.  They
+		  cannot download it at any time or reshare it without your permission.
+		</div>
+	      </div>
+	    </div>
+
+	    <div class="accordion-group">
+	      <div class="accordion-heading">
+		<a class="accordion-toggle" data-toggle="collapse"
+		   data-parent="#accordion2" href="#collapseTwoB">
+		  Can I easily share my data with my doctor?
+		</a>
+	      </div>
+	      <div id="collapseTwoB" class="accordion-body collapse">
+		<div class="accordion-inner">
+		  We have plans to allow you to share the genetic results such as 
+		  your health risks and prescription drug sensitivity with your doctor
+		  and other medical providers by simply entering their email address or
+		  touching phones.
+		</div>
+	      </div>
+	    </div>
+
+
+	    <div class="accordion-group">
+	      <div class="accordion-heading">
+		<a class="accordion-toggle" data-toggle="collapse"
+		   data-parent="#accordion2" href="#collapseTwo">
+		  What's the difference between genotype, exome and genome?
+		</a>
+	      </div>
+	      <div id="collapseTwo" class="accordion-body collapse">
+		<div class="accordion-inner">
+		  Genotyping covers a small percentage of select spots in your
+		  genes that are known or suspected to cause disease or have other
+		  effects.  Your exome is a much larger sample of your DNA, almost
+		  the whole portion that codes for proteins, and your genome is the
+		  whole thing.  The more you sequence, the more it costs.  However,
+		  costs are falling extremely rapidly and full genome sequencing 
+		  will be a standard part of care in the reasonably near future.
+		</div>
+	      </div>
+	    </div>
+
+
+	    <div class="accordion-group">
+	      <div class="accordion-heading">
+		<a class="accordion-toggle" data-toggle="collapse"
+		   data-parent="#accordion2" href="#collapse03">
+		  How does my DNA get sequenced?
+		</a>
+	      </div>
+	      <div id="collapse03" class="accordion-body collapse">
+		<div class="accordion-inner">
+		  Your DNA is sequenced by a third party lab, such as,
+		  <a href="http://www.23andme.com">23AndMe</a>, 
+		  <a href="http://www.ambrygen.com">Ambrygen</a>, 
+		  <a href="http://dna.ancestry.com/">Ancestry.com</a> or
+		  <a href="http://www.illumina.com">Illumina</a>.
+		  <!-- TODO: use JS to make product name easily changed -->
+		  <!-- throughout document until final selection -->
+		  Well Baby Baby uses this data to give you useful information
+f		  such as your predisposition to a certain disease or whether
+		  you are a carrier for a genetic disease you could pass on to
+		  your child, and allows you to share it if you wish, for instance
+		  with a family member or someone with with whom you are 
+		  considering having a baby.
+		</div>
+	      </div>
+	    </div>
+
+	    <div class="accordion-group">
+	      <div class="accordion-heading">
+		<a class="accordion-toggle" data-toggle="collapse"
+		   data-parent="#accordion2" href="#collapse04">
+		  How much does it cost?
+		</a>
+	      </div>
+	      <div id="collapse04" class="accordion-body collapse">
+		<div class="accordion-inner">
+		  Genotyping from 23AndMe is $99.  Exome and full genome
+		  sequencing cost more, currently hundreds and thousands
+		  of dollars respectively, but costs are  
+		  <a href="http://www.genome.gov/images/content/cost_per_genome.jpg">
+		     falling extremely rapidly.</a>  
+		  For the next year or two most customers are expected to 
+		  use 23AndMe-style genotyping unless there is a family history
+		  of rare disease or you are extremely curious!
+		  There is currently no charge for the Well Baby Baby app.
+		</div>
+	      </div>
+	    </div>
+
+	    <div class="accordion-group">
+	      <div class="accordion-heading">
+		<a class="accordion-toggle" data-toggle="collapse"
+		   data-parent="#accordion2" href="#collapse04a">
+		  How is this different from being sequenced by an individual lab?  Don't they all
+		  offer their own interpretation of my test results?
+		</a>
+	      </div>
+	      <div id="collapse04a" class="accordion-body collapse">
+		<div class="accordion-inner">
+		  Well Baby Baby differs from other services in three ways:
+		  <ol>
+		    <li>It uses the more comprehensive genomic database from SNPedia when possible</li>
+		    <li>It has a mobile app with a beautiful UI that is optimized for comparing and sharing</li>
+		    <li>It allows you to compare genetic information from different services.  For instance, if
+		        you have carrier testing from Ancestry.com and you are interested in having a baby with someone
+		        who has been genotyped by 23andMe, Well Baby Baby will find the places where the tests 
+		        overlap and give you carrier information in those instances.  This can save you hundreds
+		        of dollars.</li>
+		  </ol>
+		</div>
+	      </div>
+	    </div>
+
+
+	    <div class="accordion-group">
+	      <div class="accordion-heading">
+		<a class="accordion-toggle" data-toggle="collapse"
+		   data-parent="#accordion2" href="#collapse06">
+		  Are there recurring costs or just a one time fee?
+		</a>
+	      </div>
+	      <div id="collapse06" class="accordion-body collapse">
+		<div class="accordion-inner">
+		  Your genome doesn't change, so if you have the whole thing
+		  sequenced, you don't need to do it again.  If you have only
+		  part of your genome sequenced (genotyping or an exome scan) you
+		  may want to have a more complete scan done in the future.  
+		  Given rapidly dropping sequencing prices you can expect to
+		  pay the same amount for the next level up that you paid the
+		  first time around.
+		</div>
+	      </div>
+	    </div>
+
+
+	    <div class="accordion-group">
+	      <div class="accordion-heading">
+		<a class="accordion-toggle" data-toggle="collapse"
+		   data-parent="#accordion2" href="#collapse06b">
+		  Is there any special support for cancer or organ transplant patients?
+		</a>
+	      </div>
+	      <div id="collapse06b" class="accordion-body collapse">
+		<div class="accordion-inner">
+		  There are two notable cases where you may want a
+		  another genome scan done: in the case of an organ transplant, and 
+		  in the case you develop cancer.
+		  Cancer tumors have a slightly different genome than the person
+		  who has them, and sequencing the tumor genome will reveal what
+		  gene(s) are different and can suggest which sorts of therapies
+		  will be effective in treating the tumor.  Similarly, a donated
+		  organ such as a kidney or liver will have a different genome 
+		  and will have its own drug response and so on.  It is possible
+		  to need three scans if you have one done for yourself, develop a
+		  tumor that needs to be sequenced then receive a donated organ
+		  to replace the cancerous one.  We hope none of our users have 
+		  this befall them, but if it does, Well Baby Baby will support
+		  multiple genetic profiles for you seamlessly.
+		</div>
+	      </div>
+	    </div>
+
+
+	    <div class="accordion-group">
+	      <div class="accordion-heading">
+		<a class="accordion-toggle" data-toggle="collapse"
+		   data-parent="#accordion2" href="#collapse07">
+		  What kind of health information can I get from my genes?
+		</a>
+	      </div>
+	      <div id="collapse07" class="accordion-body collapse">
+		<div class="accordion-inner">
+		  While your genome stays the same,
+		  science is making new discoveries about our genes weekly 
+		  (sometimes daily) so with your genotype in hand Well Baby Baby
+		  will keep you informed of the discoveries that apply to
+		  your genes as they are made.  Currently over 200 diagnostic
+		  genetic tests are available covering risks for Alzheimer's
+		  and Parkinson's disease, Diabetes, Breast cancer, 
+		  Tay-Sachs Disease, Crohn's Disease, Phenylketoneuria, Bipolar
+		  Disorder and hundreds more.
+		</div>
+	      </div>
+	    </div>
+
+
+	    <div class="accordion-group">
+	      <div class="accordion-heading">
+		<a class="accordion-toggle" data-toggle="collapse"
+		   data-parent="#accordion2" href="#collapse08">
+		  What sources will be used to find insight about my genetics?
+		</a>
+	      </div>
+	      <div id="collapse08" class="accordion-body collapse">
+		<div class="accordion-inner">
+		  Genetic analysis will be performed based on information found in 
+		  <a href="http://www.snpedia.com/index.php/SNPedia">SNPedia</a>, 
+		  plus peer reviewed journals such as Nature, Science, PNAS,
+		  etc. If you use 23AndMe as your genotyping lab, their reports will
+		  be available to you in Well Baby Baby as well.
+		</div>
+	      </div>
+	    </div>
+
+
+	  </div>
+	</div>
 
       </div>
+ 
 
       <!-- Not crucial, but we put this under a CC By-SA 3.0 license. -->
       <!-- http://creativecommons.org/licenses/ -->
