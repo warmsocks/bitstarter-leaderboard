@@ -27,7 +27,7 @@ var Constants = {
   FUNDING_SI_SCALE: 1000,
   FUNDING_END_DATE: new Date("September 8, 2013"),
   PRODUCT_NAME: "Well Baby Baby",
-  PRODUCT_SHORT_DESCRIPTION: "Keep abreast of discoveries in your genes. Have a healthier baby. Share your genome.",
+  PRODUCT_SHORT_DESCRIPTION: "Keep abreast of discoveries in your genes.  Have a healthier baby.  Share your genome.",
   TWITTER_USERNAME: "nodejs",
   TWITTER_TWEET: "This student crowdfunder looks interesting.",
   COINBASE_PREORDER_DATA_CODE: "e19c5be0e69c63ac014a667a98723f36",
