@@ -41,7 +41,7 @@ var build_errfn = function(errmsg, response) {
 var indexfn = function(request, response) {
     response.render("homepage", {
 	name: Constants.APP_NAME,
-	title: "My First " + Constants.APP_NAME,
+	title: Constants.APP_NAME,
 	product_name: Constants.PRODUCT_NAME,
 	twitter_username: Constants.TWITTER_USERNAME,
 	twitter_tweet: Constants.TWITTER_TWEET,
@@ -83,6 +83,10 @@ var refresh_orderfn = function(request, response) {
     global.db.Order.refreshFromCoinbase(cb);
 };
 
+var contactfn = function(request, response) {
+    response.render("contact", {});
+};
+
 
 /*
    Helper functions which create a ROUTES array for export and use by web.js
@@ -112,7 +116,8 @@ var ROUTES = define_routes({
     '/': indexfn,
     '/orders': orderfn,
     '/api/orders': api_orderfn,
-    '/refresh_orders': refresh_orderfn
+    '/refresh_orders': refresh_orderfn,
+    '/contact': contactfn
 });
 
 module.exports = ROUTES;

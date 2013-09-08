@@ -30,7 +30,7 @@ var Constants = {
   PRODUCT_SHORT_DESCRIPTION: "Keep abreast of discoveries in your genes.  Have a healthier baby.  Share your genome.",
   TWITTER_USERNAME: "nodejs",
   TWITTER_TWEET: "This student crowdfunder looks interesting.",
-  COINBASE_PREORDER_DATA_CODE: "e19c5be0e69c63ac014a667a98723f36",
+  COINBASE_PREORDER_DATA_CODE: "01faec4dc1b36be04960dbe32a93c487",
   days_left: function() {
       return Math.max(Math.ceil((this.FUNDING_END_DATE - new Date()) / (1000*60*60*24)), 0);
   }
