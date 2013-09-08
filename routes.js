@@ -87,6 +87,10 @@ var contactfn = function(request, response) {
     response.render("contact", {});
 };
 
+var aboutfn = function(request, response) {
+    response.render("about", {});
+};
+
 
 /*
    Helper functions which create a ROUTES array for export and use by web.js
@@ -117,7 +121,8 @@ var ROUTES = define_routes({
     '/orders': orderfn,
     '/api/orders': api_orderfn,
     '/refresh_orders': refresh_orderfn,
-    '/contact': contactfn
+    '/contact': contactfn,
+    '/about': aboutfn
 });
 
 module.exports = ROUTES;
