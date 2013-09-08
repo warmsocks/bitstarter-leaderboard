@@ -3,7 +3,7 @@ if (!global.hasOwnProperty('db')) {
     var sq = null;
     var fs = require('fs');
     var path = require('path');
-    var PGPASS_FILE = path.join(__dirname, '../.pgpass');
+    var PGPASS_FILE = path.join(__dirname, '.pgpass');
     if (process.env.DATABASE_URL) {
         /* Remote database
            Do `heroku config` for details. We will be parsing a connection
