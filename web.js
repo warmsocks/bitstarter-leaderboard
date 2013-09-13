@@ -98,7 +98,8 @@ global.db.sequelize.sync().complete(function(err) {
 	    function(cb) {
 		// Mirror the orders before booting up the server
 		console.log("Initial mirror of Coinbase orders at " + new Date());
-		global.db.Order.refreshFromCoinbase(cb);
+		// global.db.Order.refreshFromCoinbase(cb);
+		cb();
 	    },
 	    function(cb) {
 		// Begin listening for HTTP requests to Express app
